@@ -9,6 +9,44 @@ This code may only be used under the MIT license.
 <link rel="import" href="../ios-styles/default-theme.html">
 <link rel="import" href="../iron-icon/iron-icon.html">
 
+<!--
+`ios-icon-button` is a button with an image placed at the center.
+
+`ios-icon-button` includes a default icon set. Use `icon` to specify which icon
+from the icon set to use.
+
+    <ios-icon-button icon="menu"></ios-icon-button>
+
+See [`iron-iconset`](#iron-iconset) for more information about how to use a
+custom icon set.
+
+Example:
+
+    <link href="path/to/iron-icons/iron-icons.html" rel="import">
+
+    <ios-icon-button icon="favorite"></ios-icon-button>
+    <ios-icon-button src="star.png"></ios-icon-button>
+
+### Styling
+
+Style the button with CSS as you would a normal DOM element. If you are using the icons
+provided by `iron-icons`, they will inherit the foreground color of the button.
+
+    /* make a red "favorite" button */
+    <ios-icon-button icon="favorite" style="color: red;"></ios-icon-button>
+
+The following custom properties and mixins are available for styling:
+
+Custom property | Description | Default
+----------------|-------------|----------
+`--ios-icon-button-disabled-text` | The color of the disabled button | `--disabled-text-color`
+`--ios-icon-button` | Mixin for a button | `{}`
+`--ios-icon-button-disabled` | Mixin for a disabled button | `{}`
+
+@group iOS elements
+@element ios-icon-button
+@demo demo/index.html
+-->
 
 <dom-module id="ios-icon-button">
   <template strip-whitespace>
