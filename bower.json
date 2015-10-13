@@ -21,7 +21,9 @@
   },
   "license": "MIT",
   "dependencies": {
-    "polymer": "Polymer/polymer#^1.1.0"
+    "polymer": "Polymer/polymer#^1.1.0",
+    "ios-styles": "KingofApp/ios-styles#^0.2.0",
+    "iron-icon": "PolymerElements/iron-icon#^1.0.0"
   },
   "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
